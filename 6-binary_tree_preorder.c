@@ -3,7 +3,6 @@
 	* binary_tree_preorder - goes through a binary tree using pre-order traversal
 	* @tree: binary_tree_t
 	* @func: point to function
-	* Return: 1 if node is a root, otherwise 0
 */
 
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
