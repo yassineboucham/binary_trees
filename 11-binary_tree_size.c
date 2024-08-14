@@ -7,13 +7,14 @@
 
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-	size_t conter = 0;
+	size_t conterl = 0;
+	size_t conterr = 0;
 
 	if (tree == NULL)
 	{
 		return (0);
 	}
-	conter = binary_tree_size(tree->left);
-	return (conter + 1);
-	conter = binary_tree_size(tree->right);
+	conterl = binary_tree_size(tree->left);
+	conterr = binary_tree_size(tree->right);
+	return (conterl + conterr + 1);
 }
